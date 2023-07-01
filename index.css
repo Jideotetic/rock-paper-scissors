@@ -23,6 +23,63 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 1px solid green;
+}
+
+main > p {
+  margin-bottom: 20px;
+}
+
+.choice-container {
+  margin-bottom: 20px;
+}
+
+button {
+  cursor: pointer;
+  background-color: #000;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  border: none;
+}
+
+.replay-button {
+  border-radius: 10px;
+  display: none;
+}
+
+img {
+  max-width: 70px;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.scores {
+  margin-bottom: 20px;
+}
+
+/*
+
+.choice-container {
+  display: none;
+  margin-bottom: 20px;
+  max-width: 300px;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid brown;
+}
+
+
+
+
+
+.replay-button {
+  display: none;
 }
 
 h1 {
@@ -35,21 +92,10 @@ p {
   margin-bottom: 20px;
 }
 
-button {
-  cursor: pointer;
-  background-color: #000;
-  color: #fff;
-  opacity: 0;
-  transition: all 0.9s ease-in-out;
-  padding: 10px;
-  border-radius: 10px;
-  font-size: 1.5rem;
-}
+ */
 
 /* .choices-container {
-  max-width: 300px;
-  width: 100%;
-  border: 1px solid brown;
+  
 }
 
 .choices-container > div {
@@ -63,9 +109,4 @@ button {
 
 
 
-img {
-  max-width: 70px;
-  width: 100%;
-  height: auto;
-  border-radius: 50%;
-} */
+ */

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,7 +14,24 @@
     <title>Rock Papper Scissors Game</title>
   </head>
   <body>
-    <main id="container">
+    <main>
+      <p class="message">Pick your choice</p>
+      <div class="choice-container">
+        <button>
+          <img src="./images/rock2.png" alt="Rock" />
+        </button>
+        <button>
+          <img src="./images/paper2.png" alt="Paper" />
+        </button>
+        <button>
+          <img src="./images/scissors2.png" alt="Scissors" />
+        </button>
+      </div>
+      <div class="scores">
+        <p class="player-score">Player Score: <span>0</span></p>
+        <p class="computer-score">Computer Score: <span>0</span></p>
+      </div>
+      <button class="replay-button">Play Again</button>
     </main>
   </body>
 </html>
