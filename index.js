@@ -63,45 +63,42 @@ for(let button of choiceButtons) {
         if(computerChoice === "Paper" && playerChoice === "Rock") {
             computerScoreCount++;
             computerScore.textContent = computerScoreCount;
-            console.log("Paper beats Rock");
-            console.log(computerChoice = getComputerChoice());
             message.textContent = "Paper beats Rock";
+            computerChoice = getComputerChoice();
         } else if(computerChoice === "Rock" && playerChoice === "Scissors") {
             computerScoreCount++;
             computerScore.textContent = computerScoreCount;
-            console.log( "Rock beats Scissors");
-            console.log(computerChoice = getComputerChoice());
             message.textContent = "Rock beats Scissors";
+            computerChoice = getComputerChoice();
         } else if(computerChoice === "Scissors" && playerChoice === "Paper") {
             computerScoreCount++;
             computerScore.textContent = computerScoreCount;
-            console.log( "Scissors beats Paper");
-            console.log(computerChoice = getComputerChoice());
             message.textContent = "Scissors beats Paper";
         } else if(computerChoice === "Rock" && playerChoice === "Paper") {
             playerScoreCount++;
             playerScore.textContent = playerScoreCount;
-            console.log( "Paper beats Rock");
-            console.log(computerChoice = getComputerChoice());
             message.textContent = "Paper beats Rock";
+            computerChoice = getComputerChoice();
         } else if(computerChoice === "Scissors" && playerChoice === "Rock") {
             playerScoreCount++;
             playerScore.textContent = playerScoreCount;
-            console.log( "Rock beat Scissors");
-            console.log(computerChoice = getComputerChoice());
             message.textContent = "Rock beats Scissors";
+            computerChoice = getComputerChoice();
         } else if(computerChoice === "Paper" && playerChoice === "Scissors") {
             playerScoreCount++;
             playerScore.textContent = playerScoreCount;
-            console.log( "Scissors beat Paper");
-            console.log(computerChoice = getComputerChoice());
             message.textContent = "Scissors beats Paper";
+            computerChoice = getComputerChoice();
         } else if(computerChoice === playerChoice) {
-            console.log( "It is a Tie! Try again");
-            console.log(computerChoice = getComputerChoice());
-            message.textContent = "It is a Tie! Try again";
+            if(message.textContent === "It is a Tie! Try again") {
+                message.textContent = `You picked ${playerChoice}! Try again`;
+            } else if(message.textContent = `You picked ${playerChoice}! Try again`) {
+                message.textContent = `You picked ${playerChoice}! Try again`;
+            } else {
+                message.textContent = "It is a Tie! Try again";
+            }
+            computerChoice = getComputerChoice();
         };
-
         if(computerScoreCount === 5) {
             for(const button of choiceButtons) {
                 button.disabled = true;
