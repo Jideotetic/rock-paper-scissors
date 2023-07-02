@@ -15,23 +15,42 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 100px;
 }
 
 main {
   max-width: 1024px;
   width: 100%;
-  display: flex;
+  padding: 0 20px;
+}
+
+.welcome-page {
+  transition: all 1s ease-in-out;
+}
+
+.game-dashboard {
+  display: none;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  border: 1px solid green;
+  transition: all 1s ease-in;
 }
 
-main > p {
+h1 {
   margin-bottom: 20px;
+  font-size: 3rem;
 }
 
-.choice-container {
+p {
   margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.choice-button-container {
+  margin-bottom: 20px;
+  max-width: 500px;
+  width: 100%;
+  border: 1px solid red;
 }
 
 button {
@@ -41,6 +60,13 @@ button {
   padding: 10px;
   border-radius: 50%;
   border: none;
+  font-size: 1.2rem;
+}
+
+.play-button {
+  opacity: 0;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
 }
 
 .replay-button {
@@ -49,64 +75,26 @@ button {
 }
 
 img {
-  max-width: 70px;
+  max-width: 100px;
   width: 100%;
   height: auto;
   border-radius: 50%;
   vertical-align: middle;
 }
 
-.scores {
-  margin-bottom: 20px;
-}
-
-/*
-
-.choice-container {
-  display: none;
-  margin-bottom: 20px;
-  max-width: 300px;
+footer {
+  max-width: 1024px;
   width: 100%;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  border: 1px solid brown;
+  padding: 0 20px;
+  opacity: 0;
 }
 
-
-
-
-
-.replay-button {
-  display: none;
+footer p {
+  font-size: 1rem;
 }
 
-h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
+@media screen and (min-width: 410px) {
+  img {
+    max-width: 150px;
+  }
 }
-
-p {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
- */
-
-/* .choices-container {
-  
-}
-
-.choices-container > div {
-  display: flex;
-  justify-content: space-around;
-}
-
-.choices-container > button {
-  margin-top: 20px;
-}
-
-
-
- */
