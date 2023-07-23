@@ -1,56 +1,56 @@
 :root {
   font-size: 16px;
+  box-sizing: border-box;
 }
 
-* {
-  box-sizing: border-box;
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
+  box-sizing: inherit;
 }
 
 body {
-  min-height: 100vh;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
   text-align: center;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  gap: 100px;
-  padding-top: 20px;
-}
-
-main {
-  max-width: 1024px;
-  width: 100%;
-  padding: 0 20px;
-}
-
-.welcome-page {
-  transition: all 1s ease-in-out;
-}
-
-.game-dashboard {
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: all 1s ease-in;
-}
-
-h1 {
-  margin-bottom: 20px;
-  font-size: 3rem;
+  padding: 1rem;
 }
 
 p {
-  margin-bottom: 20px;
-  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.game-dashboard {
+  display: flex;
+  flex-direction: column;
+}
+
+.round-winner,
+.game-winner {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
 }
 
 .choice-button-container {
-  margin-bottom: 20px;
-  max-width: 500px;
-  width: 100%;
+  margin-bottom: 3rem;
 }
 
 button {
@@ -60,18 +60,7 @@ button {
   padding: 10px;
   border-radius: 50%;
   border: none;
-  font-size: 1.2rem;
-}
-
-.play-button {
-  opacity: 0;
-  border-radius: 10px;
-  transition: all 0.5s ease-in-out;
-}
-
-.replay-button {
-  border-radius: 10px;
-  display: none;
+  font-size: 1rem;
 }
 
 img {
@@ -82,19 +71,10 @@ img {
   vertical-align: middle;
 }
 
-footer {
-  max-width: 1024px;
-  width: 100%;
-  padding: 0 20px;
+.replay-button {
   opacity: 0;
-}
-
-footer p {
-  font-size: 1rem;
-}
-
-@media screen and (min-width: 410px) {
-  img {
-    max-width: 150px;
-  }
+  border-radius: 10px;
+  background-color: #fff;
+  color: #000;
+  transition: all 0.5s ease-in-out;
 }

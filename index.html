@@ -8,32 +8,39 @@
       rel="shortcut icon"
       href="./images/fingers-gd133e3986_640.png"
       type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet" />
     <link rel="stylesheet" href="index.css" />
     <script src="index.js" defer></script>
-    <title>Rock Papper Scissors Game</title>
+    <title>Rock Paper Scissors Game</title>
   </head>
   <body>
-    <main>
-      <section class="welcome-page"></section>
-      <section class="game-dashboard">
-        <p class="message">Pick your choice</p>
-        <div class="choice-button-container">
-          <button>
-            <img src="./images/rock2.png" alt="Rock" title="Rock" />
-          </button>
-          <button>
-            <img src="./images/paper2.png" alt="Paper" title="Paper" />
-          </button>
-          <button>
-            <img src="./images/scissors2.png" alt="Scissors" title="Scissors" />
-          </button>
-        </div>
-        <div class="scores">
-          <p class="player-score">Player Score: <span>0</span></p>
-          <p class="computer-score">Computer Score: <span>0</span></p>
-        </div>
-        <button class="replay-button">Play Again</button>
-      </section>
+    <header>
+      <h1>Rock Paper Scissors</h1>
+    </header>
+    <main class="game-dashboard">
+      <p>Pick your choice</p>
+      <p class="round-winner"></p>
+      <p class="game-winner"></p>
+      <div class="choice-button-container">
+        <button>
+          <img src="./images/rock2.png" alt="Rock" title="Rock" />
+        </button>
+        <button>
+          <img src="./images/paper2.png" alt="Paper" title="Paper" />
+        </button>
+        <button>
+          <img src="./images/scissors2.png" alt="Scissors" title="Scissors" />
+        </button>
+      </div>
+      <div class="scores">
+        <p>Player Score: <span class="player-score">0</span></p>
+        <p>Computer Score: <span class="computer-score">0</span></p>
+      </div>
+      <button class="replay-button">Play Again</button>
     </main>
     <footer>
       <p>
@@ -53,7 +60,10 @@
           >Pixabay</a
         >
       </p>
-      <p>Designed and Coded by Abdulbasit Yusuf</p>
+      <p>
+        Designed and Coded by
+        <a href="https://github.com/Jideotetic">Abdulbasit Yusuf</a>
+      </p>
     </footer>
   </body>
 </html>
