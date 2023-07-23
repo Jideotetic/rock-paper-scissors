@@ -12,7 +12,7 @@ choiceButtons.addEventListener('click', handleButton);
 function handleButton(e) {
   const playerSelection = e.target.alt;
   const computerSelection = getComputerChoice();
-  game(computerSelection, playerSelection);
+  playGame(computerSelection, playerSelection);
 }
 
 // getComputerChoice is function to generate random choice for the computer
@@ -23,7 +23,7 @@ function getComputerChoice() {
 // getComputerChoice ends
 
 // game is a function to play five(5) rounds of the game and keep track of scores to display winner
-function game(computerSelection, playerSelection) {
+function playGame(computerSelection, playerSelection) {
   let winner = playRound(computerSelection, playerSelection);
   showRoundWinner(winner);
   showGameWinner(computerScoreCount, playerScoreCount);
